@@ -1,0 +1,787 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Oswald:wght@200;300;700&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+header{ 
+    grid-area: header;
+}
+
+section{
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+  @media screen and (max-width: 767px) {
+    #main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh auto 25vh;
+        grid-template-areas: "header header" "section section" "footer footer";
+    }
+    .fotobanda {
+        height: 75%;
+        width:  100%;
+    }
+
+    #menuBurger {
+        display: flex;
+        justify-content: flex-end;
+       
+        
+        
+    }
+
+    h4 {
+        display: none;
+    }
+
+    .logotop{
+        display: inline;
+        font-size: 25px;
+        padding: 40px;
+        margin: 20px 0 0 0;
+        font-style: italic;
+    }
+
+    
+    h2 {
+        text-align: center;
+    }
+    #yt {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        
+}
+
+iframe {
+    width: 100%;
+}
+
+.seguinos{
+    text-align: center;
+    font-size: 15px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+}
+  
+.menu {
+    display: none;
+}
+
+/*NOTICIAS*/
+
+.flexnoticias { 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.recuadro {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.parrafoNoticias {
+    padding-top: 10px;
+}
+
+.foton {
+    width: 100%;
+    height: 70%;
+    
+}
+
+/* PROXIMAS FECHAS*/
+
+.foto3 {
+    width: 100%;
+    height: 100%;
+}
+.fechasflex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 10vh;
+}
+
+.entradas {
+    text-align: center;
+    padding: 15px 0 10px 0;
+
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+#pr {
+    text-align: center;
+}
+
+/*DISCOGRAFIA*/
+
+.recuadrocd {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 8vh;
+       
+}
+.recuadrocdhijo {
+       
+    text-align: center;
+    
+   
+    
+}
+
+ol li {
+    margin: 10px;
+}
+
+
+
+#discografiafoto {
+    width: 100%;
+}
+
+#titulodiscografia {
+    text-align: center;
+}
+
+#fondodiscografia {
+    background-color: grey;
+}
+
+
+
+.portadas {
+    width: 100%;
+    height: 50%;
+}
+
+ol li {
+    text-align: center;
+}
+
+.recuadrocdhijo {
+
+    margin: 20px 0 20px 0;
+}
+
+/*MERCH.HTML*/
+
+.merchflex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 10vh;
+}
+
+.remera {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.productos {
+    
+        width: 100%;
+    padding: 30px 60px 0 0;
+    text-align: center;
+     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     
+    
+  }
+
+  /*CONTACTO.HTML*/
+
+  form{
+    width: 290px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    border-radius: 8px;
+   
+  
+  }
+  
+  input,textarea {
+  
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 17px;
+  }
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px)
+  {
+    #main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh auto 25vh;
+        grid-template-areas: "header header" "section section" "footer footer";
+    }
+    .fotobanda {
+        height: 75%;
+        width:  100%;
+    }
+
+    #menuBurger {
+        display: flex;
+        justify-content: flex-end;
+        display: none;
+       
+        
+        
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+       list-style-type: none;
+       width: 100%;
+     }
+
+ a  {
+    text-decoration: none; 
+    font-size: 20px;
+    color: black;
+    font-weight: bold;    
+    font-family: 'Anton', sans-serif;
+    
+    font-family: 'Bebas Neue', cursive;
+    
+    font-family: 'Oswald', sans-serif;
+    
+    font-family: 'Roboto', sans-serif;
+       }
+a:hover {
+            text-decoration: underline;
+            
+        }
+.logotop {
+    display: none;
+}
+
+.logo {
+           
+          font-size: 20px;
+          margin: 10px;
+          padding: 0px;
+          font-weight: bold;
+          font-style: italic;
+          font-family: 'Anton', sans-serif;
+        
+          font-family: 'Bebas Neue', cursive;
+        
+          font-family: 'Oswald', sans-serif;
+        
+          font-family: 'Roboto', sans-serif;
+        }
+        
+        .logo a:hover{
+            text-decoration: none;
+        }
+        
+      
+    
+
+    h4 {
+        display: none;
+    }
+
+ 
+
+    
+    h2 {
+        text-align: center;
+    }
+    #yt {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 20%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        
+}
+
+iframe {
+    width: 100%;
+}
+
+.seguinos{
+    text-align: center;
+    font-size: 15px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+}
+  
+
+
+/*NOTICIAS*/
+
+.flexnoticias { 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.recuadro {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.parrafoNoticias {
+    padding-top: 10px;
+}
+
+.foton {
+    width: 100%;
+    height: 70%;
+    
+}
+
+/* PROXIMAS FECHAS*/
+
+.foto3 {
+    width: 100%;
+    height: 100%;
+}
+.fechasflex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 10vh;
+}
+
+.entradas {
+    text-align: center;
+    padding: 15px 0 10px 0;
+
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+#pr {
+    text-align: center;
+}
+
+/*DISCOGRAFIA*/
+
+.recuadrocd {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 8vh;
+       
+}
+.recuadrocdhijo {
+       
+    text-align: center;
+    
+   
+    
+}
+
+ol li {
+    margin: 10px;
+}
+
+
+
+#discografiafoto {
+    width: 100%;
+}
+
+#titulodiscografia {
+    text-align: center;
+}
+
+#fondodiscografia {
+    background-color: grey;
+}
+
+
+
+.portadas {
+    width: 100%;
+    height: 50%;
+}
+
+ol li {
+    text-align: center;
+}
+
+.recuadrocdhijo {
+
+    margin: 20px 0 20px 0;
+}
+
+/*MERCH.HTML*/
+
+.merchflex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 10vh;
+}
+
+.remera {
+    width: 100%;
+    height: 100%;
+   
+}
+
+.productos {
+    
+        width: 100%;
+    padding: 30px 60px 0 0;
+    text-align: center;
+     box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     
+    
+  }
+
+  /*CONTACTO.HTML*/
+
+  form{
+    width: 290px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    border-radius: 8px;
+   
+  
+  }
+  
+  input,textarea {
+  
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 17px;
+  }
+  }
+
+
+@media screen and (min-width: 1024px) {
+
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 5vh auto 25vh;
+        grid-template-areas: "header header header" "section section section" "footer footer footer";
+    }
+
+    .fotobanda {
+        width: 100%;
+        height: 40%;
+    }
+    
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+       list-style-type: none;
+       width: 100%;
+    }
+    
+    #menuBurger {
+        display: none;
+    }
+
+    #item {
+        justify-self: start;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        font-family: 'Anton', sans-serif;
+    
+        font-family: 'Bebas Neue', cursive;
+    
+        font-family: 'Oswald', sans-serif;
+    
+        font-family: 'Roboto', sans-serif;
+        
+    }
+    
+    a:hover {
+        text-decoration: underline;
+        
+    }
+    .logotop{
+        display: none;
+    }
+    .logo {
+       
+      font-size: 20px;
+      margin: 10px;
+      padding: 0px;
+      font-weight: bold;
+      font-style: italic;
+      font-family: 'Anton', sans-serif;
+    
+      font-family: 'Bebas Neue', cursive;
+    
+      font-family: 'Oswald', sans-serif;
+    
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .logo a:hover{
+        text-decoration: none;
+    }
+    
+  
+    
+    .redes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        
+    }
+    
+    .seguinos {
+        text-align: center;
+        margin: 20px;
+    }
+    
+        
+    
+    #contacto {
+        text-decoration: underline;
+        font-size: 19px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    h1{
+        text-align: center;
+        margin: 20px;
+    }
+
+    
+    
+    #yt {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       gap: 10px;
+       padding: 10px 0 0 100px;
+       margin-bottom: 20vh;
+       
+       
+     
+    }
+
+  
+    
+    /*NOTICIAS.HTML*/
+    
+   
+    
+    .flexnoticias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0 20px 20px;
+        
+    }
+    .recuadro {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    
+    .foton {
+        width: 100%;
+        height: 100%;
+        
+    }
+    
+    
+    
+    h2 {
+        text-align: center;
+    
+    }
+    
+    p {
+       margin: 10px 0 10px 0;
+    }
+    
+    /*DISCOGRAFIA.HTML*/
+    
+    #discografiafoto {
+        width: 100%;
+    }
+    
+    .recuadrocd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+           
+    }
+    .portadas {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .recuadrocdhijo {
+        
+        margin: 30px;
+        text-align: center;
+        box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        
+      
+        
+    }
+    
+    #titulodiscografia {
+        font-size: 25px;
+    }
+    
+    #fondodiscografia {
+        background-color: gray;
+    }
+    
+    /*MERCH.HTML*/
+    
+    .merchflex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    
+    .productos {
+    
+        
+        padding: 50px;
+        max-width: 600px;
+        margin: auto;
+       text-align: center;  
+       box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        
+      }
+    
+    .remera {
+    
+        height: 300px;
+        width: 300px;
+      
+      }
+    
+    /*PROXIMASFECHAS.HTML*/
+    
+    .foto3 { 
+       width: 100%;
+      
+      }
+    
+      .entradas {
+         text-align: center;
+        box-shadow: black 1px 2px 3px 4px;
+        margin: 10px 0 10px 0px;
+        
+        }
+        
+        .banner { 
+        
+          width: 500px;
+          height: 500px;
+         
+        }
+        
+    .fechasflex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    /*CONTACTO.HTML*/
+    
+    form{
+        width: 450px;
+        margin: auto;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.4);
+        margin-top: 40px;
+        border-radius: 8px;
+       
+      
+      }
+      
+      input,textarea {
+      
+        width: 100%;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        padding: 7px;
+        font-size: 17px;
+      }
+  
+}
+
